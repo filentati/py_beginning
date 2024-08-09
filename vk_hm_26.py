@@ -1,5 +1,5 @@
 class Person:
-    def __init__(self, age):
+    def __init__(self, age = 0):
        self._age = age
 
     @property
@@ -14,8 +14,6 @@ class Person:
             self._age = value
     
 
-code = []
-while data := input():
-    code.append(data)
-code = "\n".join(code)
-exec(code)
+person = Person()
+person.age = 19
+print(person.age)
